@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+current=$(dirname $(realpath $0))
+exe="$current/../sloth-cli/build/install/sloth-cli/bin/sloth-cli"
+
+[ ! -f "$exe" ] && ./gradlew --quiet ":sloth-cli:installDist"
+
+"$exe" "$@"
