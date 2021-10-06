@@ -4,7 +4,8 @@
 
 ### Eclipse ###
 .metadata
-bin/
+# Allowing bin for scripting.
+# bin/
 tmp/
 *.tmp
 *.bak
